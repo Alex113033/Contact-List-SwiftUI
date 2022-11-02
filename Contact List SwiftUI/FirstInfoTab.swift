@@ -8,16 +8,14 @@
 import SwiftUI
 
 struct FirstInfoTab: View {
-    let persons: [Person]
-    
-    @State private var singleSelection: UUID?
+    let person: [Person]
     
     var body: some View {
         NavigationView {
-            List(persons, selection: $singleSelection) { person in
+            List(person) { person in
                 NavigationLink(
                     person.fullName,
-                    destination: InfoPerson(persons: person)
+                    destination: InfoPerson(person: person)
                 )
             }
             .listStyle(.grouped)
@@ -29,6 +27,6 @@ struct FirstInfoTab: View {
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        FirstInfoTab(persons: Person.getPersonRandom())
+        FirstInfoTab(person: Person.getPersonRandom())
     }
 }

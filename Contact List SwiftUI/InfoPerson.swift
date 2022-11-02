@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct InfoPerson: View {
-    
-    let persons: Person
+    let person: Person
     
     var body: some View {
         List {
@@ -18,32 +17,17 @@ struct InfoPerson: View {
                 .aspectRatio(contentMode: .fill)
                 .foregroundColor(Color.blue)
                 .padding()
+            ContactImage(text: person.phone, image: "phone.circle.fill")
+            ContactImage(text: person.mail, image: "envelope.circle.fill")
             
-            HStack {
-                Image(systemName: "phone.circle.fill")
-                    .resizable()
-                    .foregroundColor(Color.blue)
-                    .frame(width: 30, height: 30)
-                    .padding()
-                Text(persons.phone)
-                    .font(.title2)
-            }
-            HStack {
-                Image(systemName: "envelope.circle.fill")
-                    .resizable()
-                    .foregroundColor(Color.blue)
-                    .frame(width: 30, height: 30)
-                    .padding()
-                Text(persons.mail)
-                    .font(.title2)
-            }
         }
+        .navigationTitle(person.fullName)
     }
 }
 
 
 struct InfoPerson_Previews: PreviewProvider {
     static var previews: some View {
-        InfoPerson(persons: Person.getPersonRandom().first!)
+        InfoPerson(person: Person.getPersonRandom().first!)
     }
 }

@@ -16,6 +16,7 @@
 		1FFC03B429130323006D0450 /* FirstInfoTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC03B329130323006D0450 /* FirstInfoTab.swift */; };
 		1FFC03B629130341006D0450 /* TwoInfoTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC03B529130341006D0450 /* TwoInfoTab.swift */; };
 		1FFC03B829130362006D0450 /* InfoPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC03B729130362006D0450 /* InfoPerson.swift */; };
+		1FFC03BA29130646006D0450 /* ContactImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC03B929130646006D0450 /* ContactImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		1FFC03B329130323006D0450 /* FirstInfoTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstInfoTab.swift; sourceTree = "<group>"; };
 		1FFC03B529130341006D0450 /* TwoInfoTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoInfoTab.swift; sourceTree = "<group>"; };
 		1FFC03B729130362006D0450 /* InfoPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPerson.swift; sourceTree = "<group>"; };
+		1FFC03B929130646006D0450 /* ContactImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				1FFC03B329130323006D0450 /* FirstInfoTab.swift */,
 				1FFC03B529130341006D0450 /* TwoInfoTab.swift */,
 				1FFC03B729130362006D0450 /* InfoPerson.swift */,
+				1FFC03B929130646006D0450 /* ContactImage.swift */,
 				1FFC03A3291302AE006D0450 /* Assets.xcassets */,
 				1FFC03A5291302AE006D0450 /* Preview Content */,
 			);
@@ -172,6 +175,7 @@
 				1FFC03B829130362006D0450 /* InfoPerson.swift in Sources */,
 				1FFC03AF291302E2006D0450 /* DataManager.swift in Sources */,
 				1FFC03B2291302F7006D0450 /* Person.swift in Sources */,
+				1FFC03BA29130646006D0450 /* ContactImage.swift in Sources */,
 				1FFC03B429130323006D0450 /* FirstInfoTab.swift in Sources */,
 				1FFC03B629130341006D0450 /* TwoInfoTab.swift in Sources */,
 				1FFC03A0291302AC006D0450 /* Contact_List_SwiftUIApp.swift in Sources */,

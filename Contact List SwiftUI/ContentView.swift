@@ -13,14 +13,14 @@ struct ContentView: View {
     
     var body: some View {
         TabView{
-            FirstInfoTab(persons: contacts)
+            FirstInfoTab(person: contacts)
                 .tabItem {
-                    Image(systemName: "note")
+                    Image(systemName: "person.text.rectangle")
                 }
             
-            TwoInfoTab(persons: contacts)
+            TwoInfoTab(person: contacts)
                 .tabItem {
-                    Image(systemName: "note")
+                    Image(systemName: "note.text")
             }
         }
     }

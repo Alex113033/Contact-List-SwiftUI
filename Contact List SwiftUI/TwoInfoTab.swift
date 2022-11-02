@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct TwoInfoTab: View {
-    
-    let persons: [Person]
+    let person: [Person]
 
-    @State private var singleSelection: UUID?
-    
     var body: some View {
         NavigationView {
-            List(persons, selection: $singleSelection) { person in
+            List(person) { person in
                     Section(header: Text("\(person.fullName)")) {
                             Text("\(person.phone)")
                             Text("\(person.mail)")
@@ -28,6 +25,6 @@ struct TwoInfoTab: View {
 
 struct TwoInfoTab_Previews: PreviewProvider {
     static var previews: some View {
-        TwoInfoTab(persons: Person.getPersonRandom())
+        TwoInfoTab(person: Person.getPersonRandom())
     }
 }
